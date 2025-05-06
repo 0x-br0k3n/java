@@ -16,7 +16,7 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'About Java', link: '/intro/About Java' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          //{ text: 'Runtime API Examples', link: '/api-examples' }
         ]
       }
     ],
