@@ -15,6 +15,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Introduciton',
+	collapsed: false,
         items: [
           { text: 'About Java', link: '/intro/About Java' },
           { text: 'OOP', link: '/intro/OOP' }
