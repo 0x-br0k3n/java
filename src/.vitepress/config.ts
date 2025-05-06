@@ -9,12 +9,12 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'About', link: '/credits' }
+      { text: 'Start Learning', link: '/About Java' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Introduciton',
         items: [
           { text: 'About Java', link: '/intro/About Java' },
           //{ text: 'Runtime API Examples', link: '/api-examples' }
