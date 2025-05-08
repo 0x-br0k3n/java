@@ -15,7 +15,7 @@ hero:
 
 features:
   - title: 0x-br0k3n
-    details: Website deisgn, deployment & class 9-10 notes
+    details: Website deisgn, deployment & notes
   - title: Dark
     details: Notes
   - title: Serena

@@ -6,18 +6,22 @@ export default defineConfig({
   description: "Java Notes",
   base: '/java/',
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    search : {
+      provider: 'local'
+    },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Start Learning', link: '/About Java' }
+      { text: 'Contribue to this project', link: '/contribute' }
     ],
 
     sidebar: [
       {
         text: 'Introduciton',
+        collapsed: false,
         items: [
           { text: 'About Java', link: '/intro/About Java' },
-          { text: 'OOP', link: '/intro/OOP' }
+          { text: 'OOP', link: '/intro/OOP' },
+          { text: 'Datatypes', link: '/intro/Datatypes' }
         ]
       }
     ],
