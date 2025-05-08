@@ -57,6 +57,9 @@ byte   :  8 bits / 1 bytes
 boolean:  8 bits / 1 bytes
 ```
 
+>[!NOTE] Nibble
+> A nibble refers to four consecutive binary digits(bits) or half of an 8-bit byte.
+
 >[!NOTE]
 > Java reserves **8 bits** for **boolean** datatype but uses only **1 bit**.
 
