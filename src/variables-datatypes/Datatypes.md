@@ -15,12 +15,15 @@
 ```
 
 >[!WARNING] Important
-> Never use **''** ( two <mark style="background: #C41442;">apostrophe **without space**</mark> in between ) for assigning empty value to a char variable, instead use **' '** ( two apostrophe **with space** between ).
+> Never use **''** ( two apostrophe **`without space`** in between ) for assigning empty value to a char variable, instead use **' '** ( two apostrophe **with space** between ) or '\u0000'.
 >
 >>[!TIP] char c = '';
 >>>[!CAUTION] error: empty character literal
 >
->>[!NOTE] char c = ' '; 
+>>[!IMPORTANT] Valid initializations :
+>>>[!NOTE] char c = ' '; 
+>>
+>>>[!NOTE] char c = '\u0000'; 
 
 ## Hierarchy of datatypes
 ```shell
@@ -47,15 +50,18 @@ boolean
 
 ## Sizes of datatypes
 ```shell
-double : 64 bits / 8 bytes
-float  : 32 bits / 4 bytes
-long   : 64 bits / 8 bytes
-int    : 32 bits / 4 bytes
-short  : 16 bits / 2 bytes
-char   : 16 bits / 2 bytes
-byte   :  8 bits / 1 bytes
-boolean:  8 bits / 1 bytes
+double  : 64 bits / 8 bytes
+float   : 32 bits / 4 bytes
+long    : 64 bits / 8 bytes
+int     : 32 bits / 4 bytes
+short   : 16 bits / 2 bytes
+char    : 16 bits / 2 bytes
+byte    :  8 bits / 1 bytes
+boolean :  8 bits / 1 bytes
 ```
+
+>[!NOTE] Bit
+>The smallest unit of memory is a bit. It represents a single binary digit, either 0 or 1.
 
 >[!NOTE] Nibble
 > A nibble refers to four consecutive binary digits(bits) or half of an 8-bit byte.
