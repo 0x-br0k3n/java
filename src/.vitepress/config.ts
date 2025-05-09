@@ -5,9 +5,18 @@ export default defineConfig({
   title: "Java",
   description: "Java Notes",
   base: '/java/',
+  markdown: {
+      math: true
+    },
   themeConfig: {
+    
     search : {
-      provider: 'local'
+      provider: 'algolia',
+      options: {
+        appId: 'YLKV8E4WUN',
+        apiKey: '23bc1cecc47bdd91c7e8540b8d991a0d',
+        indexName: '...'
+      }
     },
     nav: [
       { text: 'Home', link: '/' },
@@ -20,8 +29,23 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'About Java', link: '/intro/About Java' },
-          { text: 'OOP', link: '/intro/OOP' },
-          { text: 'Datatypes', link: '/intro/Datatypes' }
+          { text: 'OOP', link: '/intro/OOP' }
+        ]
+      },
+      {
+        text: 'Variables and Datatypes',
+        collapsed: true,
+        items: [
+          { text: 'Datatypes', link: '/variables-datatypes/Datatypes' },
+          { text: 'Typecasting', link: '/variables-datatypes/Typecasting' }
+        ]
+      },
+      {
+        text: 'Boolean algebra',
+        collapsed: true,
+        items: [
+          { text: 'Laws', link: '/boolean-algebra/Laws' },
+          { text: 'K-map', link: '/boolean-algebra/K-map' }
         ]
       }
     ],
