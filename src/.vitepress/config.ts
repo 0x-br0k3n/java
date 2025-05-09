@@ -11,7 +11,7 @@ export default defineConfig({
     head.push(['meta', { property: 'algolia-site-verification', content: "A1D1DA947CBAA955" }])
     
     return head
-  }
+  },
   markdown: {
       math: true
     },
