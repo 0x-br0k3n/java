@@ -1,10 +1,17 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, HeadConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Java",
   description: "Java Notes",
   base: '/java/',
+  transformHead: ({ pageData }) => {
+    const head: HeadConfig[] = []
+
+    head.push(['meta', { property: 'algolia-site-verification', content: "A1D1DA947CBAA955" }])
+    
+    return head
+  }
   markdown: {
       math: true
     },
