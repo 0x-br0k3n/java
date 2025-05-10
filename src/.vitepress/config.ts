@@ -12,7 +12,11 @@ export default defineConfig({
   themeConfig: {
 
     search: {
-      provider: 'local'
+      provider: 'local',
+      options: {
+       detailedView: true 
+      }
+      
     },
     nav: [
       { text: 'Home', link: '/' },
