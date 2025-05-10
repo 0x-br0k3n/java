@@ -1,23 +1,17 @@
-import { defineConfig, HeadConfig } from 'vitepress'
+import { defineConfig } from 'vitepress'
+import head from "./head"
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Java",
   description: "Java Notes",
   base: '/java/',
-  transformHead: ({ pageData }) => {
-    const head: HeadConfig[] = []
-
-    head.push(['meta', { name: 'algolia-site-verification', content: '${{AGOLIA_VERIFICATION}}' }])
-    
-    return head
-  },
+  head,
   markdown: {
-      math: true
-    },
+    math: true
+  },
   themeConfig: {
-    
-    search : {
+
+    search: {
       provider: 'algolia',
       options: {
         appId: 'YLKV8E4WUN',
