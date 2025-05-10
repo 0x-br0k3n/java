@@ -12,12 +12,7 @@ export default defineConfig({
   themeConfig: {
 
     search: {
-      provider: 'algolia',
-      options: {
-        appId: 'NK7W5RJF4F',
-        apiKey: '6d71bba1875785ee6a3349c8af3f1b0b',
-        indexName: '...'
-      }
+      provider: 'local'
     },
     nav: [
       { text: 'Home', link: '/' },
