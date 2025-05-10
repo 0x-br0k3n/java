@@ -8,7 +8,7 @@ export default defineConfig({
   transformHead: ({ pageData }) => {
     const head: HeadConfig[] = []
 
-    head.push(['meta', { property: 'algolia-site-verification', content: "A1D1DA947CBAA955" }])
+    head.push(['meta', { name: 'algolia-site-verification', content: '${{AGOLIA_VERIFICATION}}' }])
     
     return head
   },
