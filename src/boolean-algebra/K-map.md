@@ -5,6 +5,7 @@ A Karnaugh map (K-map) is a visual method used to `simplify the algebraic expres
 
 ## What is SOP?
 
+
 ## What is POS?
 
 ## 2-variable K-map sample

@@ -32,14 +32,4 @@ Datatypes : a : double, b : int, c : char, d : byte
 Expression : a * b + c - d
 Solution : From Hierarchy of datatypes, we can tell that the expr will give a value of double datatype
 
-Detailed_Solution :
-
-a   *   b   +   c   -   d
-↓       ↓       |       |
- double         |       |
-    ↓           ↓       |
-        double          |
-        ↓               ↓
-              double\
-
 
