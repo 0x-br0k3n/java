@@ -26,7 +26,7 @@ This is because in `d1` we are explicitly telling the compiler to upcast the num
 ## When does Automatic type conversion in Java?
 Automatic type conversion occurs in Java when there is a need to convert a value from a `smaller or narrower` data type to a `larger or wider` data type.
 
-## Determiing datatype of an expression
+## Determining datatype of an expression
 
 Datatypes : a : double, b : int, c : char, d : byte
 Expression : a * b + c - d
