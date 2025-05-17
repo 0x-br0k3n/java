@@ -64,10 +64,13 @@ boolean :  8 bits / 1 bytes
 >The smallest unit of memory is a bit. It represents a single binary digit, either 0 or 1.
 
 >[!NOTE] Nibble
-> A nibble refers to four consecutive binary digits(bits) or half of an 8-bit byte.
+> A nibble refers to four consecutive binary digits(bits) or half of a byte(8-bits).
 
 >[!NOTE]
 > Java reserves **8 bits** for **boolean** datatype but uses only **1 bit**.
+>
+> So the smallest data type in terms of memory `consumption` is ***boolean***.
+>>[!NOTE] In terms of memory <code>allocation</code>, boolean and byte both are smallest.
 
 >[!TIP] ASCII
 'A' = 65
@@ -103,7 +106,7 @@ boolean :  8 bits / 1 bytes
 >```
 
 
-## Types of Data Types :
+## Types of Data Types
 >[!NOTE] Primitive Data Types
 >>[!IMPORTANT] Integer Data Types
 >> byte , short , int , long
@@ -124,3 +127,12 @@ boolean :  8 bits / 1 bytes
 >>[!IMPORTANT] Classes
 >
 >>[!IMPORTANT] Interfaces
+
+>[!NOTE] 
+> Reference/Non-primitive data types are created by the programmer (except for String [`Why?`](/string/Introduction/why-string-is-not-a-primitive-datatype)).
+
+>[!NOTE] 
+> Primitive data types are also known as `Fundamental`, `In-buit` data types.
+
+>[!NOTE]
+> Reference data types are also known as `Non-primitive`, `User-defined`, `Composite` data types.
