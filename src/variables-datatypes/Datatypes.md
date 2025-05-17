@@ -129,7 +129,7 @@ boolean :  8 bits / 1 bytes
 >>[!IMPORTANT] Interfaces
 
 >[!NOTE] 
-> Reference/Non-primitive data types are created by the programmer (except for String [`Why?`](/string/Introduction/why-string-is-not-a-primitive-datatype)).
+> Reference/Non-primitive data types are created by the programmer (except for String [`Why?`](/string/Introduction#why-string-is-not-a-primitive-datatype)).
 
 >[!NOTE] 
 > Primitive data types are also known as `Fundamental`, `In-buit` data types.
