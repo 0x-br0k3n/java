@@ -1,7 +1,7 @@
 {
   "type": "module",
   "devDependencies": {
-    "gsap": "^3.12.5",
+    "gsap": "^3.13.0",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.6.3"
   },
