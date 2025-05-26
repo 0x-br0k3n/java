@@ -51,7 +51,15 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'Datatypes', link: '/variables-datatypes/Datatypes' },
-          { text: 'Typecasting', link: '/variables-datatypes/Typecasting' }
+          { text: 'Typecasting', link: '/variables-datatypes/Typecasting' },
+          { text: 'Operators and Expressions', link: '/variables-datatypes/Operators and Expressions'}
+        ]
+      },
+      {
+        text: 'String',
+        collapsed: true,
+        items: [
+            { text: 'Introduction', link: '/string/Introduction'}
         ]
       },
       {
@@ -66,6 +74,13 @@ export default defineConfig({
           { text: 'About Java', link: '/intro/About Java' },
           //{ text: 'Runtime API Examples', link: '/api-examples' }
 >>>>>>> Stashed changes
+        ]
+      },
+      {
+        text: 'Extra',
+        collapsed: true,
+        items: [
+            { text: 'Memory', link:'/extra/Memory' }
         ]
       }
     ],
