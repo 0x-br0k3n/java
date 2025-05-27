@@ -535,4 +535,6 @@ A Karnaugh map (K-map) is a visual method used to `simplify the algebraic expres
     </tbody>
 </table>
 
-<img src="/assets/svg/k-map/1.svg"></img>
+## Possible pairs and quads (4 variable)
+<img src="/assets/svg/k-map/light/1.svg" class="light-only"></img>
+<img src="/assets/svg/k-map/dark/1.svg" class="dark-only"></img>

@@ -141,3 +141,11 @@ mark {
     border-radius: 10%;
     padding: 0.9%;
 }
+
+html.dark .light-only {
+  display: none !important;
+}
+
+html:not(.dark) .dark-only {
+  display: none !important;
+}
