@@ -14,9 +14,9 @@ export default defineConfig({
     search: {
       provider: 'local',
       options: {
-       detailedView: true 
+        detailedView: true
       }
-      
+
     },
     nav: [
       { text: 'Home', link: '/' },
@@ -38,14 +38,72 @@ export default defineConfig({
         items: [
           { text: 'Datatypes', link: '/variables-datatypes/Datatypes' },
           { text: 'Typecasting', link: '/variables-datatypes/Typecasting' },
-          { text: 'Operators and Expressions', link: '/variables-datatypes/Operators and Expressions'}
+          { text: 'Operators and Expressions', link: '/variables-datatypes/Operators and Expressions' }
+        ]
+      },
+      {
+        text: 'Methods',
+        collapsed: true,
+        items: [
+          { text: 'Introduction', link: '/Methods/Introduction' },
+          { text: 'Method Overloading', link: '/Methods/Method Overloading' }
+        ]
+      },
+      {
+        text: 'Encapsulation',
+        collapsed: true,
+        items: [
+          { text: 'Introduction', link: '/Encapsulation/Introduction' },
+          { text: 'Access Specifier', link: '/Encapsulation/Access Specifier or Visibility Modifiers' }
+        ]
+      },
+      {
+        text: 'Constructors',
+        collapsed: true,
+        items: [
+          { text: 'Introduction', link: '/Constructors/Introduction' }
+        ]
+      },
+      {
+        text: 'Library Functions',
+        collapsed: true,
+        items: [
+          {
+            text: 'Math',
+            collapsed: true,
+            items: [
+              { text: 'Basic Math Functions', link: '/Libs/Maths/Basic Math Functions' }
+            ]
+          },
+          {
+            text: 'Wrapper Classes',
+            collapsed: true,
+            items: [
+              { text: 'Introduction', link: '/Libs/Wrapper Classes/Introduction' },
+              { text: 'Utility Methods', link: '/Libs/Wrapper Classes/Utility Methods' }
+            ]
+          },
         ]
       },
       {
         text: 'String',
         collapsed: true,
         items: [
-            { text: 'Introduction', link: '/string/Introduction'}
+          { text: 'Introduction', link: '/string/Introduction' },
+          { text: 'compareTo()', link: '/string/CompareTo()' },
+          { text: 'equals() & equalsIgnoreCase()', link: '/string/equals() & equalsIgnoreCase()' },
+          { text: 'indexOf() & lastIndexOf()', link: '/string/indexOf() & lastIndexOf()' },
+          { text: 'lowerCase() & upperCase()', link: '/string/lowerCase() & upperCase()' },
+          { text: 'substring()', link: '/string/substring()' }
+        ]
+      },
+      {
+        text: 'Arrays',
+        collapsed: true,
+        items: [
+          { text: 'Introduction', link: '/Arrays/Introduction' },
+          { text: 'Searching Algorithms', link: '/Arrays/Searching' },
+          { text: 'Sorting Algorithms', link: '/Arrays/Sorting' }
         ]
       },
       {
@@ -60,7 +118,7 @@ export default defineConfig({
         text: 'Extra',
         collapsed: true,
         items: [
-            { text: 'Memory', link:'/extra/Memory' }
+          { text: 'Memory', link: '/extra/Memory' }
         ]
       }
     ],
