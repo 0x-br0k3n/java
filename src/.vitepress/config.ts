@@ -18,6 +18,9 @@ export default defineConfig({
       }
 
     },
+    editLink: {
+      pattern: 'https://github.com/0x-br0k3n/java/blob/main/src/:path'
+    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Contribue to this project', link: '/contribute' }
