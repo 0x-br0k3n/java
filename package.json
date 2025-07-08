@@ -11,7 +11,7 @@
     "src:preview": "vitepress preview src"
   },
   "dependencies": {
-    "dotenv": "^17.0.1",
+    "dotenv": "^17.1.0",
     "save": "^2.9.0"
   }
 }
