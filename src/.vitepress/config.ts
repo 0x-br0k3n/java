@@ -123,6 +123,13 @@ export default defineConfig({
         items: [
           { text: 'Memory', link: '/extra/Memory' }
         ]
+      },
+      {
+        text: 'Downloads',
+        collapsed: true,
+        items: [
+          { text: 'eBooks', link: '/Downloads/eBooks' }
+        ]
       }
     ],
 

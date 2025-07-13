@@ -172,4 +172,16 @@
     flex: 1;
 }
 
+.FeatureButtons a {
+    flex: 1;
+    text-decoration: none;
+}
+
+.emoji-VPFeature {
+    vertical-align: middle;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+
 /* VPFeature end */
