@@ -19,7 +19,7 @@
         <p class="details">Includes Graphs , Hashsets , etc with their utility functions <img class="emoji-VPFeature" src="https://em-content.zobj.net/source/microsoft-teams/400/winking-face_1f609.png" /></p>
         <div class="FeatureButtons">
             <button class="VPButton medium alt" onclick="window.open('/java/documents/dsa-java.pdf', '_blank')">View</button>
-            <a class="VPButton medium brand" target="_blank" href="/java/documents/dsa-java.pdf" download="DSA.pdf">Download</a>
+            <a class="VPButton medium brand" href="/java/documents/dsa-java.pdf" download="DSA.pdf">Download</a>
         </div>
     </article>
 </div>
@@ -29,7 +29,7 @@
         <p class="details">For acing competitive programing contests like CodeChef , HakerRank , Codeforces, etc.  <img class="emoji-VPFeature" src="https://em-content.zobj.net/source/microsoft-teams/400/smiling-face-with-sunglasses_1f60e.png" /></p>
         <div class="FeatureButtons">
             <button class="VPButton medium alt" onclick="window.open('/java/documents/cp-cses.pdf', '_blank')">View</button>
-            <a class="VPButton medium brand" href="/java/documents/cp-cses.pdf" download="'book.pdf" >Download</a>
+            <a class="VPButton medium brand" href="/java/documents/cp-cses.pdf" download="book.pdf" >Download</a>
         </div>
     </article>
 </div>
