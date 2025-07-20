@@ -27,7 +27,7 @@
 
 			.guage-text {
 				font-size: 40px;
-				font-family: monospace;
+				font-family: "ProductSans";
 				text-align: center
 			}
 
@@ -66,10 +66,10 @@
 				stroke: none;
 				font-size: 26px;
 				line-height: 26px;
-				font-family: Roboto, Halvetica, Arial, sans-serif
+				font-family: "ProductSans";
 			}
 			.metric.guage-title {
-				font-family: 'Courier New', Courier, monospace
+				font-family: "ProductSans";
 			}
 			.theme--agnostic .guage-title {
 				color: #737373;
