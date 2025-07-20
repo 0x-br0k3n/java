@@ -6,10 +6,10 @@
 
 ### Mobile
 
-![Mobile](assets/img/mobile.svg)
+![Mobile](assets/pagespeed/mobile.svg)
 
 ### Desktop
 
-![Desktop](assets/img/desktop.svg)
+![Desktop](assets/pagespeed/desktop.svg)
 
 [Website Link](https://0x-br0k3n.github.io/java/)
