@@ -42,8 +42,8 @@ jobs:
       - name: Generate SVGs using curl
         run: |
           mkdir -p assets/pagespeed
-          BASE_URL= "http://localhost:3000" # The tool will listen to port 3000
-          TARGET_URL= "https://0x-br0k3n.github.io/java"
+          BASE_URL="http://localhost:3000" # The tool will listen to port 3000
+          TARGET_URL="https://0x-br0k3n.github.io/java"
 
           for theme in dark light; do
             for strategy in mobile desktop; do
