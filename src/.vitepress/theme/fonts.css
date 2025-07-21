@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Code';
+    src: url('/assets/fonts/CaskaydiaMonoNerdFont-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Docs';
+    src: url('/assets/fonts/ProductSans.woff') format('woff');
+}
+
+:root {
+  --vp-font-family-base: 'Docs';   /* normal text font */
+  --vp-font-family-mono: 'Code';    /* code font */
+}

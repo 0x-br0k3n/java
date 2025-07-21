@@ -149,3 +149,24 @@ html.dark .light-only {
 html:not(.dark) .dark-only {
   display: none !important;
 }
+
+.emoji-big {
+    vertical-align: middle;
+    display: inline-block;
+    height: 2rem;
+    width: auto;
+    padding-bottom: 0.5rem;
+}
+
+.emoji-medium {
+    vertical-align: middle;
+    display: inline-block;
+    height: 1.6rem;
+    width: auto;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.content-body {
+    position: sticky !important; 
+}

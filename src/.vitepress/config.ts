@@ -1,11 +1,15 @@
 import { defineConfig } from 'vitepress'
 import head from "./head"
+import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 
 export default defineConfig({
   title: "Java",
   description: "Java Notes",
   base: '/java/',
   head,
+  vite: {
+    plugins: [pagefindPlugin()],
+  },
   markdown: {
     math: true
   },
@@ -23,7 +27,8 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Contribue to this project', link: '/contribute' }
+      { text: 'Contribue to this project', link: '/contribute' },
+      { text: 'Our Team', link: '/team' }
     ],
 
     sidebar: [
