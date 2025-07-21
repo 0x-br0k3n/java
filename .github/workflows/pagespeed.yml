@@ -1,0 +1,61 @@
+name: Update PageSpeed Score
+
+on:
+  # Automatically run after Deploy CI workflow completes successfully
+  workflow_run:
+    workflows: ["CI"]
+    types:
+      - completed
+
+  # Allow manual run from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  pagespeed:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main repository
+        uses: actions/checkout@v4
+
+      - name: Clone PageSpeed script repo
+        run: git clone https://github.com/0x-br0k3n/readme-pagespeed-insights pagespeed-tool
+
+      - name: Install dependencies for PageSpeed script
+        working-directory: pagespeed-tool
+        run: npm install
+
+      - name: Create .env file with API key
+        working-directory: pagespeed-tool
+        run: echo "API_KEY=${{ secrets.API_KEY }}" > .env
+
+      - name: Build and start the PageSpeed server in background
+        working-directory: pagespeed-tool
+        run: |
+          npm run build
+          nohup npm run start &
+
+      - name: Wait for server to start
+        run: sleep 10
+
+      - name: Generate SVGs using curl
+        run: |
+          mkdir -p assets/pagespeed
+          BASE_URL= "http://localhost:3000" # The tool will listen to port 3000
+          TARGET_URL= "https://0x-br0k3n.github.io/java"
+
+          for theme in dark light; do
+            for strategy in mobile desktop; do
+              curl "${BASE_URL}/?url=${TARGET_URL}&theme=${theme}&strategy=${strategy}&categories=performance,accessibility,best-practices,seo" > "assets/pagespeed/${strategy}_${theme}.svg"
+            done
+          done
+
+      - name: Commit and push SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/pagespeed/
+          git commit -m "chore: update PageSpeed SVGs [skip ci]" || echo "No changes to commit"
+          git push
+          
