@@ -46,11 +46,13 @@ jobs:
         run: |
           mkdir -p assets/pagespeed
           BASE_URL="http://localhost:3000" # The tool will listen to port 3000
-          TARGET_URL="https://0x-br0k3n.github.io/java"
+          TARGET_URL_GH="https://0x-br0k3n.github.io/java"
+          TARGET_URL_VERCEL="https://javanotes-br0k3n.vercel.app/"
 
           for theme in dark light; do
             for strategy in mobile desktop; do
-              curl "${BASE_URL}/?url=${TARGET_URL}&theme=${theme}&strategy=${strategy}&categories=performance,accessibility,best-practices,seo" > "assets/pagespeed/${strategy}_${theme}.svg"
+              curl "${BASE_URL}/?url=${TARGET_URL_GH}&theme=${theme}&strategy=${strategy}&categories=performance,accessibility,best-practices,seo" > "assets/pagespeed/${strategy}_${theme}_gh.svg"
+              curl "${BASE_URL}/?url=${TARGET_URL_VERCEL}&theme=${theme}&strategy=${strategy}&categories=performance,accessibility,best-practices,seo" > "assets/pagespeed/${strategy}_${theme}_vercel.svg"
             done
           done
 

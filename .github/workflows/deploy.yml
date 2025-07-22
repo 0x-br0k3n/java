@@ -10,11 +10,13 @@ on:
     paths-ignore:
       - 'assets/**'   # Ignore any changes within the 'assets' directory
       - 'README.md'   # Ignore changes to the README.md file
+      - '.github/workflows/pagespeed.yml'
   pull_request:
     branches: [ "main" ]
     paths-ignore:
       - 'assets/**'
       - 'README.md'
+      - '.github/workflows/pagespeed.yml'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
