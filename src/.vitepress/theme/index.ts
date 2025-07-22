@@ -2,7 +2,7 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme' // Keep this for 'extends'
-import { SpeedInsights } from "@vercel/speed-insights/vue"
+import { injectSpeedInsights } from '@vercel/speed-insights';
 // Remove these imports, as their logic will now live inside Layout.vue
 // import { nextTick, provide } from 'vue'
 // import { useData } from 'vitepress'
@@ -22,5 +22,6 @@ export default {
   enhanceApp({ app, router, siteData }) {
     // Example: app.component('MyGlobalComponent', MyGlobalComponent)
     // No 'toggle-appearance' provide here anymore, it's in Layout.vue
+    injectSpeedInsights();
   }
 } satisfies Theme

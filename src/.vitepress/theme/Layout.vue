@@ -44,7 +44,6 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 </script>
 
 <template>
-  <SpeedInsights />
   <DefaultTheme.Layout>
     <template #layout-top>
       <Cursor />
