@@ -5,7 +5,7 @@ import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 export default defineConfig({
   title: "Java",
   description: "Java Notes",
-  base: '/java/',
+  // base: '/java/',
   head,
   vite: {
     plugins: [pagefindPlugin()],
