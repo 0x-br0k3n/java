@@ -2,6 +2,7 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme' // Keep this for 'extends'
+import { SpeedInsights } from "@vercel/speed-insights/vue"
 // Remove these imports, as their logic will now live inside Layout.vue
 // import { nextTick, provide } from 'vue'
 // import { useData } from 'vitepress'

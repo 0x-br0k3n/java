@@ -11,6 +11,7 @@
     "src:preview": "vitepress preview src"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.2.0",
     "dotenv": "^17.2.0",
     "pagefind": "^1.3.0",
     "save": "^2.9.0",
