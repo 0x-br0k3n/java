@@ -18,7 +18,4 @@ features:
     details: Website deisgn, deployment & notes
   - title: Dark
     details: Notes
-  - title: Serena
-    details: Notes
 ---
-<meta name="algolia-site-verification"  content="A1D1DA947CBAA955" />
