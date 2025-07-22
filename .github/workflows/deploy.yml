@@ -60,7 +60,7 @@ jobs:
 #        run: sed -i 's/APP_ID/${{ secrets.APP_ID }}/' src/.vitepress/config.ts
 #        run: sed -i 's/API_KEY/${{ secrets.API_KEY }}/' src/.vitepress/config.ts
       - name: Build with VitePress
-        run: npm run src:build # or pnpm docs:build / yarn docs:build / bun run docs:build
+        run: npm run src:build -- --base /java/ # or pnpm src:build / yarn src:build / bun run src:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

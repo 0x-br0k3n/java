@@ -1,10 +1,12 @@
 @font-face {
     font-family: 'Code';
+    font-display: swap;
     src: url('/assets/fonts/CaskaydiaMonoNerdFont-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Docs';
+    font-display: swap;
     src: url('/assets/fonts/ProductSans.woff') format('woff');
 }
 
