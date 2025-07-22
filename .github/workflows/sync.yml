@@ -1,0 +1,47 @@
+name: Sync vercel branch with main
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore: # This workflow will NOT run if only changes are in these paths
+      - 'readme.md'
+      - 'assets/pagespeed/**' # Ignore any changes within the pagespeed directory
+  workflow_dispatch: # Allows manual triggering of the workflow from the GitHub UI
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main # Checkout the main branch
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+      - name: Prepare Vercel branch content
+        run: |
+          echo "Removing files and directories not needed for Vercel deployment..."
+          # Remove files/directories not needed on Vercel
+          rm -f readme.md
+          rm -rf assets/pagespeed
+          # Remove GitHub Pages specific workflow files
+          rm -f .github/workflows/github-pages-deploy.yml
+          rm -f .github/workflows/pagespeed.yml
+          echo "Content prepared."
+
+      - name: Commit and push to vercel branch
+        run: |
+          echo "Staging changes..."
+          git add .
+          echo "Committing changes..."
+          # The '|| true' allows the command to succeed even if there are no changes to commit
+          git commit -m "Sync from main (filtered for Vercel deployment)" || true
+          echo "Pushing to vercel branch..."
+          # Force push to overwrite the vercel branch with the filtered content
+          git push origin HEAD:vercel --force
+          echo "Sync to vercel branch complete."
