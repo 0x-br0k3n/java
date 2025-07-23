@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths-ignore: # This workflow will NOT run if only changes are in these paths
-      - 'readme.md'
+      - 'README.md'
       - 'assets/pagespeed/**' # Ignore any changes within the pagespeed directory
   workflow_dispatch: # Allows manual triggering of the workflow from the GitHub UI
 
