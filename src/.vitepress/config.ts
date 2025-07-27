@@ -131,7 +131,9 @@ export default defineConfig({
             text: 'Data Structures',
             collapsed: true,
             items: [
-              { text: 'Introduction', link: '/Data Structures & Algorithms/Data Structures/Introduction' }
+              { text: 'Introduction', link: '/Data Structures & Algorithms/Data Structures/Introduction' },
+              { text: 'Queue', link: '/Data Structures & Algorithms/Data Structures/Queue' },
+              { text: 'Deque', link: '/Data Structures & Algorithms/Data Structures/Deque' }
             ]
           },
           {
