@@ -196,3 +196,14 @@ html:not(.dark) .dark-only {
 .VPSwitchAppearance .check {
   transform: none !important;
 }
+
+.nav-search-btn-wait svg {
+    stroke-width: 2;
+}
+
+.VPNav {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: var(--vp-z-index-local-nav);
+}

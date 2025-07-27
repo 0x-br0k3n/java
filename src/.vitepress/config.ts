@@ -123,6 +123,34 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Data Structures & Algorithms',
+        collapsed: true,
+        items: [
+          { text: 'Introduction', link: '/Data Structures & Algorithms/Introduction' },
+          {
+            text: 'Data Structures',
+            collapsed: true,
+            items: [
+              { text: 'Introduction', link: '/Data Structures & Algorithms/Data Structures/Introduction' }
+            ]
+          },
+          {
+            text: 'Algorithms',
+            collapsed: true,
+            items: [
+              { text: 'Introduction', link: '/Data Structures & Algorithms/Algorithms/Introduction' }
+            ]
+          },
+        ]
+      },
+      {
+        text: 'Hardware',
+        collapsed: true,
+        items: [
+          { text: 'Encoder', link: '/Hardware/Encoder' }
+        ]
+      },
+      {
         text: 'Extra',
         collapsed: true,
         items: [

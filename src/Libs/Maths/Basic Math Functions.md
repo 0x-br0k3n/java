@@ -125,5 +125,5 @@ double x = Math.random(); // 0.0
 
 >[!WARNING] Math.PI
 >Java stores pi as a constant in the Math class.
-[!NOTE] Syntax :
-`double pi = Math.PI();`
+>>[!NOTE] Syntax :
+>>`double pi = Math.PI();`

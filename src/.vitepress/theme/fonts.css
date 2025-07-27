@@ -8,7 +8,10 @@
     font-family: 'Docs';
     font-display: swap;
     src: url('/assets/fonts/ProductSans.woff') format('woff');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
 }
+
 
 :root {
   --vp-font-family-base: 'Docs';   /* normal text font */
