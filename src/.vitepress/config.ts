@@ -2,7 +2,12 @@ import { defineConfig } from 'vitepress'
 import head from "./head"
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 
-export default defineConfig({
+import type { ThemeConfig } from 'vitepress-theme-mild';
+import { defineConfigWithTheme } from 'vitepress';
+import baseConfig from 'vitepress-theme-mild/config';
+
+export default defineConfigWithTheme<ThemeConfig>({
+  extends: baseConfig,
   title: "Java",
   description: "Java Notes",
   //base: '/java/',

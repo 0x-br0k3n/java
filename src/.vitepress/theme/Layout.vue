@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
+import DefaultTheme from 'vitepress-theme-mild';
 import { nextTick, provide } from 'vue'
 import Cursor from './Cursor.vue' // Keep this if Cursor is placed in a slot below
 
