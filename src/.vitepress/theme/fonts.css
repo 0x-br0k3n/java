@@ -17,3 +17,9 @@
   --vp-font-family-base: 'Docs';   /* normal text font */
   --vp-font-family-mono: 'Code';    /* code font */
 }
+
+/* Disable tap highlight color on Chrome for mobile/touch */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
