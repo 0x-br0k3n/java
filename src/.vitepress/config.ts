@@ -7,14 +7,17 @@ import { defineConfigWithTheme } from 'vitepress';
 import baseConfig from 'vitepress-theme-mild/config';
 
 export default defineConfigWithTheme<ThemeConfig>({
-  extends: baseConfig,
+  extends: {
+    ...baseConfig,
+    vite: {
+      ...(baseConfig as any).vite,
+      plugins: [pagefindPlugin(), ...(baseConfig as any).vite.plugins],
+    }
+  },
   title: "Java",
   description: "Java Notes",
   //base: '/java/',
   head,
-  vite: {
-    plugins: [pagefindPlugin()],
-  },
   markdown: {
     math: true
   },
