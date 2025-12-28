@@ -13,10 +13,15 @@ export default defineConfigWithTheme<ThemeConfig>({
       rollupOptions: {
         output: {
           manualChunks(id) {
-            // Split heavy dependencies into their own chunks
-            if (id.includes('shiki')) return 'shiki';
-            if (id.includes('vue')) return 'vue-core';
-            if (id.includes('vitepress-theme-mild')) return 'theme';
+
+            if (id.includes('shiki') || id.includes('@shikijs')) {
+              return 'shiki';
+            }
+
+            if (id.includes('node_modules/vue')) {
+              return 'vue';
+            }
+
           }
         }
       }
