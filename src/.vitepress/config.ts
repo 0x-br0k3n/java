@@ -141,7 +141,8 @@ export default defineConfigWithTheme<ThemeConfig>({
         items: [
           { text: 'Introduction', link: '/Arrays/Introduction' },
           { text: 'Searching Algorithms', link: '/Arrays/Searching' },
-          { text: 'Sorting Algorithms', link: '/Arrays/Sorting' }
+          { text: 'Sorting Algorithms', link: '/Arrays/Sorting' },
+          { text: 'Properties of Arrays', link: '/Arrays/Properties' }
         ]
       },
       {

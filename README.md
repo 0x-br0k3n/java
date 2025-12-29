@@ -3,7 +3,7 @@
 ## Website Link
 
 ### [Github Pages](https://nullptr-t-oss.github.io/java/)
-### [Vercel (Optimised for better performance on Mobiles)](https://javanotes-br0k3n.vercel.app/)
+### [Vercel (Optimized for better performance on Mobiles)](https://javanotes-nullptr-t-oss.vercel.app/)
 
 ## Performance metrics :
 

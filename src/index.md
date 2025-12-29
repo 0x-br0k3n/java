@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: ":)"
+  name: "^◡^"
   text: "Java"
   tagline: Never Settle
   actions:

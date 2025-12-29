@@ -12,10 +12,11 @@ All wrapper classes are part of `java.lang` package.
  - Double - java.lang.Double
  - Float - java.lang.Float
  - Integer - java.lang.Integer
- - Long Short - java.lang.Short
+ - Long - java.lang.Long
+ - Short - java.lang.Short
 
 >[!DANGER] Void class
->There is also Void class but it's object cannot be created.
+>There is also Void class but it's object cannot be created
 
 
 ## Reasons for having wrapper classes :
@@ -33,7 +34,20 @@ All wrapper classes are part of `java.lang` package.
 ---
 
 >[!NOTE] Autoboxing
->You can assign a primitive value to its wrapper class object and Java will automatically wrap around or box around sn object on the primitive value, this is called autoboxing.
+>You can assign a primitive value to its wrapper class object and Java will automatically wrap around or box around sn object on the primitive value, this is called autoboxing
 
 >[!NOTE] Unboxing
->You can assign a wrapper class  object's value to its primitive type and Java will automatically unwrap the object around the primitive value, this is called unboxing.
+>You can assign a wrapper class  object's value to its primitive type and Java will automatically unwrap the object around the primitive value, this is called unboxing
+
+## Object class
+Object class (in java.lang) is the root of the Java class hierarchy. Every class in Java either directly or indirectly extends Object. (i.e. all Wrapper Classes including String are subclasses of Object class)
+
+## Number class
+The Number class in Java is an abstract superclass in the java.lang package that serves as the base for all numeric wrapper classes. It provides a way to treat primitive numeric types as objects and defines common methods for converting between numeric types.
+There are mainly six sub-classes under Number class :
+- Byte
+- Short
+- Integer
+- Long
+- Float
+- Double
