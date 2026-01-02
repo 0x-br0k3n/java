@@ -33,7 +33,7 @@ export default defineConfigWithTheme<ThemeConfig>({
   title: "Java",
   description: "Java Notes",
   //base: '/java/',
-  head,
+  head: head,
   markdown: {
     math: true
   },
