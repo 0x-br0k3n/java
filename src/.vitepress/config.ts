@@ -6,6 +6,14 @@ import type { ThemeConfig } from 'vitepress-theme-mild';
 import { defineConfigWithTheme } from 'vitepress';
 import baseConfig from 'vitepress-theme-mild/config';
 
+const isVercel = process.env.VERCEL === '1';
+
+const hostname = isVercel
+  ? 'https://javanotes-nullptr-t-oss.vercel.app/'
+  : 'https://nullptr-t-oss.github.io/java/';
+
+const base = isVercel ? '/' : '/java/';
+
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
   vite: {
@@ -33,6 +41,10 @@ export default defineConfigWithTheme<ThemeConfig>({
   title: "Java",
   description: "Java Notes",
   //base: '/java/',
+  base: base,
+  sitemap: {
+    hostname: hostname
+  },
   head: head,
   markdown: {
     math: true
