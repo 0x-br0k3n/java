@@ -1,4 +1,3 @@
-import { defineConfig } from 'vitepress'
 import head from "./head"
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 
@@ -36,6 +35,15 @@ export default defineConfigWithTheme<ThemeConfig>({
     },
     plugins: [
       pagefindPlugin()
+    ]
+  },
+  transformHead: ({ pageData }) => {
+    const canonicalUrl = `https://javanotes-nullptr-t-oss.vercel.app/${pageData.relativePath}`
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html');
+
+    return [
+      ['link', { rel: 'canonical', href: encodeURI(canonicalUrl) }]
     ]
   },
   title: "Java",
