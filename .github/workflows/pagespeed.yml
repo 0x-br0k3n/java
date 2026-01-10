@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Clone PageSpeed script repo
-        run: git clone https://github.com/0x-br0k3n/readme-pagespeed-insights pagespeed-tool
+        run: git clone https://github.com/nullptr-t-oss/readme-pagespeed-insights pagespeed-tool
 
       - name: Install dependencies for PageSpeed script
         working-directory: pagespeed-tool
@@ -46,7 +46,7 @@ jobs:
         run: |
           mkdir -p assets/pagespeed
           BASE_URL="http://localhost:3000" # The tool will listen to port 3000
-          TARGET_URL_GH="https://0x-br0k3n.github.io/java"
+          TARGET_URL_GH="https://nullptr-t-oss.github.io/java"
           TARGET_URL_VERCEL="https://javanotes-br0k3n.vercel.app/"
 
           for theme in dark light; do
