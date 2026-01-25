@@ -10,7 +10,7 @@ Syntax :
 double x = Math.pow(2,3); // 8
 ```
 
->[!TIP] Use `Math.pow(x,1/n)` to get nth root
+>[!TIP] Use <code>Math.pow(x , 1/n)</code> to get nth root
 
 ## sqrt()
 This method returns sqrt of the argument.
@@ -40,9 +40,9 @@ Return type : `double`
 
 Syntax : 
 ```java
-double x = Math.ceil(6.1); // 7.0
-double x = Math.ceil(6); // 6.0
-double x = Math.ceil(-6.1); // -6.0
+double a = Math.ceil(6.1); // 7.0
+double b = Math.ceil(6); // 6.0
+double c = Math.ceil(-6.1); // -6.0
 ```
 
 ## floor()
@@ -53,9 +53,9 @@ Return type : `double`
 
 Syntax : 
 ```java
-double x = Math.floor(6.1); // 6.0
-double x = Math.floor(6); // 6.0
-double x = Math.floor(-6.1); // -7.0
+double a = Math.floor(6.1); // 6.0
+double b = Math.floor(6); // 6.0
+double c = Math.floor(-6.1); // -7.0
 ```
 
 ## round()
@@ -65,11 +65,11 @@ Return type : `long` / `int`
 
 Syntax : 
 ```java
-double x = Math.round(6.5);  //  7
-double x = Math.round(6.4);  //  6
-double x = Math.round(-6.5); // -6
-double x = Math.round(-6.4); // -6
-double x = Math.round(-2.6); // -3
+double a = Math.round(6.5);  //  7
+double b = Math.round(6.4);  //  6
+double c = Math.round(-6.5); // -6
+double d = Math.round(-6.4); // -6
+double e = Math.round(-2.6); // -3
 ```
         
 >[!TIP] Note the above syntax carefully. ( .5 round up is done in case of positive values and .6 round down is done in case of negative numbers.)
@@ -81,10 +81,10 @@ Return type : `double` / `float` / `int` / `long` (same as argument datatype)
 
 Syntax : 
 ```java
-double x = Math.abs(6.5); //  6.5
-double x = Math.abs(-6.5); // 6.5
-double x = Math.abs(-6); // 6
-double x = Math.abs(6); // 6
+double a = Math.abs(6.5); //  6.5
+double b = Math.abs(-6.5); // 6.5
+double c = Math.abs(-6); // 6
+double d = Math.abs(6); // 6
 ```
         
 
@@ -96,7 +96,7 @@ Return type : `double` / `float` / `int` / `long` (same as argument datatype)
 Syntax : 
 ```java
 double x = Math.max(6.5, 6.4); // 6.5
-double x = Math.max(-2 , -3); // -2
+double y = Math.max(-2 , -3); // -2
 ```  
 
 ## min()
@@ -107,7 +107,7 @@ Return type : `double` / `float` / `int` / `long` (same as argument datatype)
 Syntax : 
 ```java
 double x = Math.min(6.5, 6.4); // 6.4
-double x = Math.min(-2 , -3); // -3
+double y = Math.min(-2 , -3); // -3
 ```
 
 ## random()
@@ -118,7 +118,7 @@ Return type : `double`
 Syntax : 
 ```java
 double x = Math.random(); // 0.1358...
-double x = Math.random(); // 0.0
+double y = Math.random(); // 0.0
 ```
 
 <br>
