@@ -6,6 +6,14 @@ Strings are the type of `objects` that can store the character of values and in 
 ## Why String is not a primitive datatype?
 A String is a Class present in `java.lang` package. Thus the variables of String data type are nothing but `objects` of this class. And due to the nature of objects, we cannot use '`==`' operator to compare Strings for equality.
 
+## String as subtype of Object Class
+In Java, the String class is a subclass of the Object class and hence is an subtype of the Object class. This means that every string object is also an object of the Object class, but not every object is necessarily a string.
+Hence the following code snippet is a valid syntax :
+```java
+Object a = "LoL";
+Object b[] = new String[5];
+```
+
 ## Features of String
 >[!NOTE] It stores the sequence of character data in memory which are accessible by its name.
 
@@ -49,3 +57,4 @@ In the String constant pool, a String object is likely to have one or many refer
 >>When the variable `a` is declared, the compiler checks if there is any string literal already present in the string pool with the same value, but this is the first time we are declaring a String with value "Hi", so compiler would not find any match and would allocate memory for the String literal and store it's reference or memory address as the value of the String `a`.<br><br> Now, when variable `b` is declared with value "Hi" , compiler again checks if there is any string literal already present in the string pool with the same value. This time, a match would be found because of the variable `a` which has same String value. Now the compiler, instead of allocating new memory for the string literal "Hi", it will store the reference or memory address of the already allocated memory for String literal "Hi" as the reference or value of the variable `b`. Now if we want to modify the String value of the variable `a`, we need to modify the value at the reference of `a`. If strings were mutable then the value of variable`b` would also get affected because both of them share same reference. So that is why Strings are immutable in java.<br><br>When variable `c` is declared with the keyword `new`, compiler doesn't check for any match in the String pool, rather it allocates new memory for the given String in the `heap` (not in the string pool) even if reference for the same String literal is already available in the String pool.
 >
 >>[!INFO] When we are using <code>==</code> operator for comparing strings, we are not comparing their String literals rather we are comparing their references. For comparing two strings always use <code>.equals()</code> function to avoid unwanted errors.
+

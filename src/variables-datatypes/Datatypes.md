@@ -19,7 +19,7 @@
 'a' = 97
 
 >[!WARNING] Important
-> Never use **''** ( two apostrophe **`without space`** in between ) for assigning empty value to a char variable, instead use **' '** ( two apostrophe **with space** between ) or '\u0000'.
+> Never use **''** ( two apostrophe **`without space`** in between ) for assigning empty value to a char variable, instead use **' '** ( two apostrophe **with space** between ) or '\u0000'
 >
 >>[!TIP] char c = '';
 >>>[!CAUTION] error: empty character literal
@@ -30,14 +30,14 @@
 >>>[!NOTE] char c = '\u0000'; 
 
 >[!WARNING] Suffix
-> - The suffix 'l' or 'L' when used after an integer signifies long value.
+> - The suffix 'l' or 'L' when used after an integer signifies long value
 > 
 >>[!TIP] Example :
 >>```java
 >>long phoneNumber = 0000000000L;
 >>```
 >>>[!TIP] 
->>>Use `long` datatype for accepting large numbers like phone number from user because using `int` might cause an overflow. 
+>>>Use `long` datatype for accepting large numbers like phone number from user because using `int` might cause an overflow 
 >
 > - The suffix 'f' or 'F' when used after an floating point integer signifies float value 
 >
@@ -46,7 +46,7 @@
 >>float pi = 3.14F;
 >>```
 >>>[!TIP]
->>>Always try to use `double` instead of `float` to avoid confusion. 
+>>>Always try to use `double` instead of `float` to avoid confusion 
 
 ## Hierarchy of datatypes
 ```shell
@@ -59,13 +59,17 @@ char
 byte
 boolean
 ```
+>[!NOTE]
+>Although boolean datatype has the lowest precedence, we cannot upcast it to other numeric datatype like byte, char, int, etc
+>>[!TIP] Yes, char is a numeric datatype. It is a 16-bit unsigned integer that stores the Unicode value of a character, ranging from 0 to 65,535
+>>>[!IMPORTANT] Therefore, char is the only unsigned primitive data type in Java (supports only positive numeric values)
 
 >[!TIP]
 >To calculate **Range** of a integer datatype of  **n bits** use the formula : **`-2ⁿ⁻¹` to `2ⁿ⁻¹ - 1`**
 >
->**Reason** : In **binary** system or **Base₂** number system, **n bits** can store a maximum **decimal / Base₁₀** number of **`2ⁿ`**.(positive numbers only). But Java doesn't support **unsigned datatypes**.(i.e. only positive numbers). So to store equal number of positive and negative numbers in a variable, the range is reduced by half and becomes **-2ⁿ⁻¹ to 2ⁿ⁻¹ - 1**.  
+>**Reason** : In **binary** system or **Base₂** number system, **n bits** can store a maximum **decimal / Base₁₀** number of **`2ⁿ`**.(positive numbers only) but Java doesn't support **unsigned datatypes**.(i.e. only positive numbers; except for char). So to store equal number of positive and negative numbers in a variable, the range is reduced by half and becomes **-2ⁿ⁻¹ to 2ⁿ⁻¹ - 1**  
 >>[!NOTE]
->> We have to subtract **1** from range in the last (**2ⁿ⁻¹**) so that we can include **`0`** in the range.
+>> We have to subtract **1** from range in the last (**2ⁿ⁻¹**) so that we can include **`0`** in the range
 >> Range = **`2ⁿ⁻¹` negative numbers** + **`0`** + **`2ⁿ⁻¹ - 1`** positive numbers
 
 
@@ -82,23 +86,23 @@ boolean :  8 bits / 1 bytes
 ```
 
 >[!NOTE]
-> Java reserves **8 bits** for **boolean** datatype but uses only **1 bit**.
+> Java reserves **8 bits** for **boolean** datatype but uses only **1 bit**
 >
-> So the smallest data type in terms of memory `consumption` is ***boolean***.
->>[!NOTE] In terms of memory <code>allocation</code>, boolean and byte both are smallest.
+> So the smallest data type in terms of memory `consumption` is **boolean**
+>>[!NOTE] In terms of memory <code>allocation</code>, boolean and byte both are smallest
 
 >[!NOTE]
 >**1** byte  =  **8** bits
 
 >[!NOTE] Bit
->The smallest unit of memory is a bit. It represents a single binary digit, either 0 or 1.
+>The smallest unit of memory is a bit. It represents a single binary digit, either 0 or 1
 
 >[!NOTE] Nibble
-> A nibble refers to four consecutive binary digits(bits) or half of a byte(8-bits).
+> A nibble refers to four consecutive binary digits(bits) or half of a byte(i.e. 1 Nibble= 4 bits)
 
 
 >[!CAUTION] final
->Keyword final when used with a declaration similar to a variable, creates a named constant.<br>
+>Keyword final when used with a declaration similar to a variable, creates a named constant<br>
 >Syntax : `final <datatype> <variable_name> = <value>;`<br>
 >Example: 
 >```java
@@ -132,7 +136,7 @@ boolean :  8 bits / 1 bytes
 > String is also a Reference/Non-primitive datatype ([`Why?`](/string/Introduction#why-string-is-not-a-primitive-datatype))
 
 >[!NOTE] 
-> Primitive data types are also known as `Fundamental`, `In-buit` data types.
+> Primitive data types are also known as `Fundamental`, `In-buit` data types
 
 >[!NOTE]
-> Reference data types are also known as `Non-primitive`, `User-defined`, `Composite` data types.
+> Reference data types are also known as `Non-primitive`, `User-defined`, `Composite` data types

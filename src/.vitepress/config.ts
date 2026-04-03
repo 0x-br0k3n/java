@@ -1,4 +1,3 @@
-import { defineConfig } from 'vitepress'
 import head from "./head"
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 
@@ -6,17 +5,55 @@ import type { ThemeConfig } from 'vitepress-theme-mild';
 import { defineConfigWithTheme } from 'vitepress';
 import baseConfig from 'vitepress-theme-mild/config';
 
+const isVercel = process.env.VERCEL === '1';
+
+const hostname = isVercel
+  ? 'https://javanotes-nullptr-t-oss.vercel.app/'
+  : 'https://nullptr-t-oss.github.io/java/';
+
+const base = isVercel ? '/' : '/java/';
+
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
   vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+
+            if (id.includes('shiki') || id.includes('@shikijs')) {
+              return 'shiki';
+            }
+
+            if (id.includes('node_modules/vue')) {
+              return 'vue';
+            }
+
+          }
+        }
+      }
+    },
     plugins: [
       pagefindPlugin()
+    ]
+  },
+  transformHead: ({ pageData }) => {
+    const canonicalUrl = `https://javanotes-nullptr-t-oss.vercel.app/${pageData.relativePath}`
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html');
+
+    return [
+      ['link', { rel: 'canonical', href: encodeURI(canonicalUrl) }]
     ]
   },
   title: "Java",
   description: "Java Notes",
   //base: '/java/',
-  head,
+  base: base,
+  sitemap: {
+    hostname: hostname
+  },
+  head: head,
   markdown: {
     math: true
   },
@@ -36,7 +73,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       delay: 100
     },
     editLink: {
-      pattern: 'https://github.com/0x-br0k3n/java/blob/main/src/:path'
+      pattern: 'https://github.com/nullptr-t-oss/java/blob/main/src/:path'
     },
     nav: [
       { text: 'Home', link: '/' },
@@ -124,7 +161,8 @@ export default defineConfigWithTheme<ThemeConfig>({
         items: [
           { text: 'Introduction', link: '/Arrays/Introduction' },
           { text: 'Searching Algorithms', link: '/Arrays/Searching' },
-          { text: 'Sorting Algorithms', link: '/Arrays/Sorting' }
+          { text: 'Sorting Algorithms', link: '/Arrays/Sorting' },
+          { text: 'Properties of Arrays', link: '/Arrays/Properties' }
         ]
       },
       {
@@ -188,7 +226,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/0x-br0k3n/java' }
+      { icon: 'github', link: 'https://github.com/nullptr-t-oss/java' }
     ]
   }
 })

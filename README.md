@@ -2,8 +2,8 @@
 
 ## Website Link
 
-### [Github Pages](https://0x-br0k3n.github.io/java/)
-### [Vercel (Optimised for better performance on Mobiles)](https://javanotes-br0k3n.vercel.app/)
+### [Github Pages](https://nullptr-t-oss.github.io/java/)
+### [Vercel (Optimized for better performance on Mobiles)](https://javanotes-nullptr-t-oss.vercel.app/)
 
 ## Performance metrics :
 
@@ -28,4 +28,4 @@
 ![Desktop](assets/pagespeed/desktop_dark_gh.svg#gh-dark-mode-only)
 
 ## CI Status
-[![CI](https://github.com/0x-br0k3n/java/actions/workflows/deploy.yml/badge.svg)](https://github.com/0x-br0k3n/java/actions/workflows/deploy.yml)
+[![CI](https://github.com/nullptr-t-oss/java/actions/workflows/deploy.yml/badge.svg)](https://github.com/nullptr-t-oss/java/actions/workflows/deploy.yml)
