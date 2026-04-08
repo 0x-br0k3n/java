@@ -1,7 +1,7 @@
 {
   "type": "module",
   "devDependencies": {
-    "defu": "^6.1.4",
+    "defu": "^6.1.7",
     "gsap": "^3.14.2",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.6.4",
