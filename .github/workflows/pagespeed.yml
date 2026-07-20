@@ -47,7 +47,7 @@ jobs:
           mkdir -p assets/pagespeed
           BASE_URL="http://localhost:3000" # The tool will listen to port 3000
           TARGET_URL_GH="https://nullptr-t-oss.github.io/java"
-          TARGET_URL_VERCEL="https://javanotes-br0k3n.vercel.app/"
+          TARGET_URL_VERCEL="https://javanotes-nullptr-t-oss.vercel.app/"
 
           for theme in dark light; do
             for strategy in mobile desktop; do
