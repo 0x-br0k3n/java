@@ -4,6 +4,10 @@ import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 import type { ThemeConfig } from 'vitepress-theme-mild';
 import { defineConfigWithTheme } from 'vitepress';
 import baseConfig from 'vitepress-theme-mild/config';
+import { 
+  GitChangelog, 
+  GitChangelogMarkdownSection, 
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 const isVercel = process.env.VERCEL === '1';
 
@@ -34,7 +38,12 @@ export default defineConfigWithTheme<ThemeConfig>({
       }
     },
     plugins: [
-      pagefindPlugin()
+      pagefindPlugin(),
+      GitChangelog({ 
+        // Fill in your repository URL here
+        repoURL: () => 'https://github.com/nolebase/integrations', 
+      }), 
+      GitChangelogMarkdownSection()
     ]
   },
   transformHead: ({ pageData }) => {
